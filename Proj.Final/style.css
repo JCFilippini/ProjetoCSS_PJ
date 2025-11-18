@@ -254,10 +254,6 @@ footer {
     }
 }
 
-body.page-labirinto {
-    background: linear-gradient(135deg, #d0e1ff, #b5caff);
-}
-
 body.page-form {
     background: linear-gradient(135deg, #f2f8ff, #dbeaff);
 }
@@ -291,4 +287,5 @@ body.page-livros section {
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
+
 }
