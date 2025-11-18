@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se torne um Meio-Sangue</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.ico">
+</head>
+
+<body class="page-form">
+    <header>
+        <nav>
+            <img src="../favicon.ico" alt="Logo Percy Jackson" class="logo">
+            <div class="menu">
+                <a href="../TCC1°MJ.html">Início</a>
+                <a href="Livros.html">Livros</a>
+                <a href="form.html">Formulário</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Venha ser um Meio-Sangue!</h1>
+
+        <form>
+            <fieldset>
+                <legend>Seus dados</legend>
+
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+                <label>Idade:</label>
+                <input type="number" name="idade" min="14" max="100" required>
+
+                <label>Data de Nascimento:</label>
+                <input type="date" name="data" required>
+
+                <legend class="normal">Sexo:</legend>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+                    <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="sexo" value="nao-informar"> Não informar</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Acampamento</legend>
+
+                <label>Parente divino:</label>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>Zeus</option>
+                    <option>Poseidon</option>
+                    <option>Atena</option>
+                    <option>Apolo</option>
+                    <option>Ares</option>
+                    <option>Afrodite</option>
+                    <option>Hermes</option>
+                </select>
+
+                <label>Livros lidos:</label>
+                <select multiple>
+                    <optgroup label="Percy Jackson e os Olimpianos">
+                        <option>O Ladrão de Raios</option>
+                        <option>O Mar de Monstros</option>
+                        <option>A Maldição do Titã</option>
+                        <option>A Batalha do Labirinto</option>
+                        <option>O Último Olimpiano</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Login</legend>
+
+                <label>Usuário:</label>
+                <input type="text" name="login" minlength="4" maxlength="20" required>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" minlength="4" maxlength="20" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmação</legend>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p style="color: rgb(174, 0, 255);">Site feito por Juja & Mah | © 2025</p>
+    </footer>
+</body>
+
+</html>
